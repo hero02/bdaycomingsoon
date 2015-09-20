@@ -1,0 +1,24 @@
+{
+  "name": "comingsoon",
+  "version": "1",
+  "homepage": "https://github.com/hero02/bdaycomingsoon",
+  "authors": [
+    "herodney <webdezinesco@gmail.com>"
+  ],
+  "description": "final projects for emergintech countdown to my bday",
+  "main": "index.html",
+  "keywords": [
+    "countdown"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "flipclock": "~0.7.7"
+  }
+}

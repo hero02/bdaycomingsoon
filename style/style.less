@@ -1,0 +1,67 @@
+// Color variables (appears count calculates by raw css)
+@color0: rgb(43,65,98); // Appears 3 times
+@color1: rgb(245,240,246); // Appears 2 times
+
+// Width variables (appears count calculates by raw css)
+@width: 400px; // Appears 2 times
+
+// Height variables (appears count calculates by raw css)
+@height0: 150px; // Appears 3 times
+
+* {
+	margin:0;
+	padding:0;
+}
+.container {
+	font-family:arial;
+	margin:0 auto;
+	text-align:center;
+	width:100%;
+	&:nth-child(1) {
+		background-color: @color0;
+		height:@height0;
+		padding:10px;
+	}
+	&:nth-child(1)>h2 {
+		color:@color1;
+		letter-spacing:5px;
+		padding: 10px 0;
+	}
+	&:nth-child(1)>h1 {
+		color:@color1;
+		padding:25px 0;
+	}
+	&:nth-child(2) {
+		background-color:rgb(190,183,164);
+		color:@color0;
+		min-height:@height0;
+		padding:25px 0;
+	}
+	&:nth-child(3) {
+		color:@color0;
+		height:@height0;
+		padding:25px 0;
+	}
+	&:nth-child(3)>h2 {
+		letter-spacing:5px;
+		padding: 10px 0;
+	}
+	&:nth-child(3)>p {
+		margin:0 auto;
+		padding: 20px 0;
+		text-align:left;
+		width:@width;
+	}
+}
+hr {
+	border-bottom: 1px solid rgba(255, 127, 17, 0.5);
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border: 0;
+	height: 0;
+	margin: 0 auto;
+	width:@width;}
+
+.flip-clock-wrapper {
+    width: 620px;
+    margin: 48px auto;
+}
